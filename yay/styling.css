@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns content to the top */
+    height: 100vh; /* Full viewport height */
+    background-color: #ffffff; /* Optional background color */
+  }
+  
+  .image-container {
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 40%; /* Ensures responsiveness */
+    height: 100; /* Maintains aspect ratio */
+
+
+  }
+
+  .imagee-container {
+    position: fixed; /* Keeps it in place even when scrolling */
+    top: 400px; /* Distance from the top of the page */
+    right: 1px; /* Distance from the right side of the page */
+    z-index: 10; /* Makes sure it appears on top of other elements */
+  }
+  
+  .imagee-container img {
+    width: 600px; /* Adjust width as needed */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  .star-container {
+    position: fixed; /* Keeps it in place even when scrolling */
+    top: 210px; /* Distance from the top of the page */
+    right: 400px; /* Distance from the right side of the page */
+    z-index: 10; /* Makes sure it appears on top of other elements */
+  }
+  
+  .star-container img {
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  .starry-container {
+    position: fixed; /* Keeps it in place even when scrolling */
+    top: 270px; /* Distance from the top of the page */
+    right: 850px; /* Distance from the right side of the page */
+    z-index: 10; /* Makes sure it appears on top of other elements */
+  }
+  
+  .starry-container img {
+    width: 400px; /* Adjust width as needed */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  @font-face {
+    font-family: 'MyCustomFont'; /* Name you choose for the font */
+    src: url('PixelifySans-VariableFont_wght.ttf') format('truetype'); /* Update path & format */
+  }
+  
+  
+  #timer {
+    position: fixed; /* Keep it visible even when scrolling */
+    top: 300px;
+    left: 500px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(126, 184, 230);
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'MyCustomFont', Arial, sans-serif;
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  .text-container {
+    position: fixed; /* Keep it visible even when scrolling */
+    top: 315px;
+    left: 550px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(238, 167, 205);
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'MyCustomFont', Arial, sans-serif;
+  }
+
+  #changing-image {
+    width: 300px; /* Adjust size */
+    height: auto;
+    border: 5px solid #ffffff;
+    border-radius: 10px; /* Optional rounded corners */
+    transition: opacity 0.5s ease; /* Smooth fade effect */
+  }
+  
